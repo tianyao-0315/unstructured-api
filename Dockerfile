@@ -5,11 +5,11 @@ ARG PIP_VERSION
 ARG PIPELINE_PACKAGE
 
 # Set up environment
-ENV USER root
-ENV HOME /root
+# ENV USER root
+# ENV HOME /root
 
-RUN groupadd --gid 0 root
-RUN useradd --uid 0 --gid 0 root
+# RUN groupadd --gid 0 root
+# RUN useradd --uid 0 --gid 0 root
 WORKDIR ${HOME}
 
 ENV PYTHONPATH="${PYTHONPATH}:${HOME}"
